@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<body style="
+    background-image: url('images/temp.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+">
+
+<div class="container">
+    <h1>Temperature Converter</h1>
+
+    <!-- Temperature input -->
+    <input 
+        type="number" 
+        id="temperature"
+        placeholder="Enter temperature">
+
+    <!-- From unit -->
+     <select id="fromUnit">
+    <option value="C">Celsius (°C)</option>
+    <option value="F">Fahrenheit (°F)</option>
+    <option value="K">Kelvin (K)</option>
+</select>
+    <button id="swapBtn" class="swap-btn">↕ Swap</button>
+
+    <!-- To unit -->
+     <select id="toUnit">
+    <option value="C">Celsius (°C)</option>
+    <option value="F">Fahrenheit (°F)</option>
+    <option value="K">Kelvin (K)</option>
+</select>
+
+    <button onclick="convertTemp()">Convert</button>
+    
+    <button id="clearBtn">Clear</button>
+
+
+    <div id="result"></div>
+</div>
+<p id="error" style="color:red;"></p>
+<p id="result" style="font-weight:600;"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
